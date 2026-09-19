@@ -19,14 +19,16 @@ function App() {
           : "bg-neutral-950 text-neutral-100"}
 `}
     >
-      <ModeToggle mode={mode} onToggle={toggleMode} />
-
+      <div className="fixed right-6 top-6 z-50">
+        <ModeToggle mode={mode} onToggle={toggleMode} />
+      </div>
       <h1>
         {mode === "work"
           ? "Sriram — Professional"
           : "Sriram — Life"}
       </h1>
-    </div>
+
+    </div >
   );
 }
 
