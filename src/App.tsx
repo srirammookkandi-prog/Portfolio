@@ -1,34 +1,23 @@
-import { useState } from "react";
-import ModeToggle from "./component/ModeToggle";
-import type { Mode } from "./types/mode";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router";
+
+import WorkPage from "./Pages/WorkPage";
+import LifePage from "./Pages/LifePage";
+import NotFoundPage from "./Pages/NotFoundPage";
 
 function App() {
-  const [mode, setMode] = useState<Mode>("work");
-
-  const toggleMode = () => {
-    setMode((currentMode) =>
-      currentMode === "work" ? "life" : "work"
-    );
-  };
-
   return (
-    <div
-      className={`min-h-screen transition-colors duration-500
-  ${mode === "work"
-          ? "bg-stone-50 text-neutral-900"
-          : "bg-neutral-950 text-neutral-100"}
-`}
-    >
-      <div className="fixed right-6 top-6 z-50">
-        <ModeToggle mode={mode} onToggle={toggleMode} />
-      </div>
-      <h1>
-        {mode === "work"
-          ? "Sriram — Professional"
-          : "Sriram — Life"}
-      </h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<WorkPage />} />
+        <Route path="/life" element={<LifePage />} />
 
-    </div >
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
