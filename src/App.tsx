@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import WorkPage from "./Pages/WorkPage";
 import LifePage from "./Pages/LifePage";
 import NotFoundPage from "./Pages/NotFoundPage";
-import Projects from "./section/work/Projects";
 import PortfolioLayout from "./layout/PortfolioLayout";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
-        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   );

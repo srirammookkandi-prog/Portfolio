@@ -2,16 +2,7 @@ function WorkHero() {
     return (
         <section
             id="home"
-            className="
-    flex
-    min-h-0
-    items-center
-    px-6
-    py-12
-    md:min-h-[calc(100vh-81px)]
-    md:px-10
-    md:py-20
-  "
+            className="flex min-h-0 items-center px-6 py-12 md:min-h-[calc(100vh-81px)] md:px-10 md:py-20 "
         >
             <div className="mx-auto w-full max-w-6xl">
                 <h2 className="text-4xl font-bold tracking-tight md:text-7xl">
@@ -37,16 +28,14 @@ function WorkHero() {
                         View Projects →
                     </a>
                     <a
-                        href="/resume.pdf"
+                        href="/Sriram_Mookkandi.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-medium transition-all duration-300 hover:-translate-y-1 hover:bg-neutral-100"
                     >
                         View Resume
                     </a>
-
                 </div>
-
             </div>
         </section>
     );

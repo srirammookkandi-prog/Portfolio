@@ -5,10 +5,7 @@ interface ProjectCardProps {
     featured?: boolean;
 }
 
-function ProjectCard({
-    project,
-    featured = false,
-}: ProjectCardProps) {
+function ProjectCard({ project, featured = false }: ProjectCardProps) {
     return (
         <article
             className={`group overflow-hidden rounded-2xl border border-neutral-200 bg-stone-50 transition-all duration-300 
@@ -19,9 +16,7 @@ function ProjectCard({
                     src={project.image} alt={`${project.title} project preview`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
             </div>
-
             <div className="p-6 md:p-8">
-
                 <h3 className="text-2xl font-semibold tracking-tight">
                     {project.title}
                 </h3>
@@ -32,23 +27,11 @@ function ProjectCard({
                     {project.technologies.map((technology) => (
                         <span
                             key={technology}
-                            className=" rounded-full
-                border
-                border-neutral-200
-                bg-white
-                px-3
-                py-1.5
-                text-xs
-                font-medium
-                text-neutral-600
-              "
-                        >
+                            className=" rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-xs font-medium text-neutral-600 " >
                             {technology}
                         </span>
                     ))}
                 </div>
-
-                {/* Links */}
                 <div className="mt-7 flex gap-6">
 
                     <a
@@ -59,7 +42,6 @@ function ProjectCard({
                     >
                         Live Demo →
                     </a>
-
                     <a
                         href={project.githubUrl}
                         target="_blank"
@@ -74,5 +56,4 @@ function ProjectCard({
         </article>
     );
 }
-
 export default ProjectCard;
