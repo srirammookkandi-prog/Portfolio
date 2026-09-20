@@ -1,38 +1,19 @@
 const skillGroups = [
     {
         title: "Core",
-        skills: [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "TypeScript",
-        ],
+        skills: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
     },
     {
         title: "Frontend",
-        skills: [
-            "React",
-            "React Hooks",
-            "React Router",
-            "Redux Toolkit",
-        ],
+        skills: ["React", "React Hooks", "React Router", "Redux Toolkit"],
     },
     {
         title: "Styling",
-        skills: [
-            "Tailwind CSS",
-            "Responsive Design",
-        ],
+        skills: ["Tailwind CSS", "Responsive Design"],
     },
     {
         title: "APIs & Tools",
-        skills: [
-            "REST APIs",
-            "Git",
-            "GitHub",
-            "Jest",
-            "VS Code",
-        ],
+        skills: ["REST APIs", "Git", "GitHub", "Jest", "VS Code"],
     },
 ];
 
@@ -40,11 +21,8 @@ function Skills() {
     return (
         <section
             id="skills"
-            className="border-t border-neutral-200 px-6 py-10 md:px-10 md:py-32"
-        >
+            className="border-t border-neutral-200 px-6 py-10 md:px-10 md:py-32" >
             <div className="mx-auto w-full max-w-6xl">
-
-                {/* Heading */}
                 <div className="max-w-2xl">
                     <p className="text-sm font-medium uppercase tracking-[0.2em] text-blue-600">
                         Skills
@@ -59,8 +37,6 @@ function Skills() {
                         responsive and maintainable frontend applications.
                     </p>
                 </div>
-
-                {/* Skill groups */}
                 <div className="mt-10 grid gap-4 md:mt-16 md:grid-cols-2">
                     {skillGroups.map((group) => {
                         const categoryStyles = {
