@@ -2,16 +2,25 @@ function WorkHero() {
     return (
         <section
             id="home"
-            className="flex min-h-[calc(100vh-81px)] items-center px-6 py-20"
+            className="
+    flex
+    min-h-0
+    items-center
+    px-6
+    py-12
+    md:min-h-[calc(100vh-81px)]
+    md:px-10
+    md:py-20
+  "
         >
             <div className="mx-auto w-full max-w-6xl">
-                <h2 className="text-5xl font-bold tracking-tight md:text-7xl">
+                <h2 className="text-4xl font-bold tracking-tight md:text-7xl">
                     Sriram Mookkandi
                 </h2>
-                <p className="mt-5 text-sm font-medium uppercase tracking-[0.2em] text-blue-600 md:text-base">
+                <p className="mt-4 text-sm font-medium uppercase tracking-[0.2em] text-blue-600 md:text-base">
                     Frontend Developer
                 </p>
-                <h1 className="mt-5 max-w-5xl text-6xl font-bold leading-[0.95] tracking-tight md:text-8xl">
+                <h1 className="mt- max-w-5xl text-6xl font-bold leading-[0.95] tracking-tight md:text-8xl">
                     I build
                     <br />
                     digital experiences.
