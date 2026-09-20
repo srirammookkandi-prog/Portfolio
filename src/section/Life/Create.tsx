@@ -1,7 +1,7 @@
-function Explore() {
+function Create() {
     return (
         <section
-            id="explore"
+            id="create"
             className="
         border-t
         border-neutral-900
@@ -14,7 +14,8 @@ function Explore() {
       "
         >
             <div className="mx-auto w-full max-w-6xl">
-                <div className="grid gap-8 md:grid-cols-[2fr_1fr] md:gap-20">
+                {/* Section Header */}
+                <div className="grid gap-8 md:grid-cols-[1fr_2fr] md:gap-20">
                     <div>
                         <p
                             className="
@@ -25,7 +26,7 @@ function Explore() {
                 text-yellow-500
               "
                         >
-                            Explore
+                            Create
                         </p>
 
                         <h2
@@ -33,65 +34,67 @@ function Explore() {
                 mt-5
                 text-5xl
                 font-bold
-                leading-[0.95]
+                leading-tight
                 tracking-tight
                 md:text-7xl
               "
                         >
-                            There is always
+                            Making things
                             <br />
-                            more to discover.
+                            with my hands.
                         </h2>
                     </div>
 
                     <div className="flex items-end">
                         <p
                             className="
-                max-w-md
+                max-w-2xl
                 text-lg
                 leading-relaxed
                 text-neutral-400
                 md:text-xl
               "
                         >
-                            I enjoy stepping away from the familiar, discovering
-                            new places and experiencing things that challenge the
-                            way I see the world.
+                            Outside of screens and code, I enjoy creating things
+                            from scratch. Cooking, baking and origami give me a
+                            different kind of satisfaction — making something
+                            tangible from a simple idea.
                         </p>
                     </div>
                 </div>
 
-                <div className="mt-20 grid gap-px overflow-hidden border border-neutral-800 bg-neutral-800 md:grid-cols-3">
-                    <article
-                        className="
-              group
-              bg-neutral-950
-              p-8
-              transition-colors
-              duration-300
-              hover:bg-neutral-900
-            "
-                    >
+                {/* Creative Activities */}
+                <div className="mt-16 grid gap-12 md:grid-cols-3 md:gap-8">
+                    {/* Cooking */}
+                    <article className="group border-t border-neutral-800 pt-6">
                         <div className="flex items-start justify-between">
-                            <span className="text-4xl">🗺️</span>
+                            <span className="text-4xl">🍳</span>
 
-                            <span className="text-xs uppercase tracking-[0.2em] text-neutral-600">
+                            <span
+                                className="
+                  text-xs
+                  uppercase
+                  tracking-[0.2em]
+                  text-neutral-600
+                "
+                            >
                                 01
                             </span>
                         </div>
 
-                        <h3 className="mt-10 text-2xl font-semibold">
-                            New Places
+                        <h3 className="mt-8 text-2xl font-semibold">
+                            Cooking
                         </h3>
 
                         <p className="mt-4 leading-relaxed text-neutral-500">
-                            Exploring places I've never been to and seeing
-                            different environments, cultures and ways of life.
+                            Experimenting with ingredients, trying new recipes
+                            and enjoying the process of turning simple things
+                            into something worth sharing.
                         </p>
 
                         <div
                             className="
-                mt-8
+                mt-6
                 h-px
                 w-0
                 bg-yellow-500
@@ -102,36 +105,36 @@ function Explore() {
                         />
                     </article>
 
-                    <article
-                        className="
-              group
-              bg-neutral-950
-              p-8
-              transition-colors
-              duration-300
-              hover:bg-neutral-900
-            "
-                    >
+                    {/* Baking */}
+                    <article className="group border-t border-neutral-800 pt-6">
                         <div className="flex items-start justify-between">
-                            <span className="text-4xl">🧭</span>
+                            <span className="text-4xl">🥐</span>
 
-                            <span className="text-xs uppercase tracking-[0.2em] text-neutral-600">
+                            <span
+                                className="
+                  text-xs
+                  uppercase
+                  tracking-[0.2em]
+                  text-neutral-600
+                "
+                            >
                                 02
                             </span>
                         </div>
 
-                        <h3 className="mt-10 text-2xl font-semibold">
-                            Adventure
+                        <h3 className="mt-8 text-2xl font-semibold">
+                            Baking
                         </h3>
 
                         <p className="mt-4 leading-relaxed text-neutral-500">
-                            I like experiences that take me outside my comfort
-                            zone and give me stories worth remembering.
+                            I enjoy the patience and precision that baking
+                            requires — following a process while still leaving
+                            room for creativity.
                         </p>
 
                         <div
                             className="
-                mt-8
+                mt-6
                 h-px
                 w-0
                 bg-yellow-500
@@ -142,36 +145,36 @@ function Explore() {
                         />
                     </article>
 
-                    <article
-                        className="
-              group
-              bg-neutral-950
-              p-8
-              transition-colors
-              duration-300
-              hover:bg-neutral-900
-            "
-                    >
+                    {/* Origami */}
+                    <article className="group border-t border-neutral-800 pt-6">
                         <div className="flex items-start justify-between">
-                            <span className="text-4xl">📸</span>
+                            <span className="text-4xl">📄</span>
 
-                            <span className="text-xs uppercase tracking-[0.2em] text-neutral-600">
+                            <span
+                                className="
+                  text-xs
+                  uppercase
+                  tracking-[0.2em]
+                  text-neutral-600
+                "
+                            >
                                 03
                             </span>
                         </div>
 
-                        <h3 className="mt-10 text-2xl font-semibold">
-                            Memories
+                        <h3 className="mt-8 text-2xl font-semibold">
+                            Origami
                         </h3>
 
                         <p className="mt-4 leading-relaxed text-neutral-500">
-                            Collecting experiences, moments and memories from
-                            the places and adventures along the way.
+                            Turning a simple sheet of paper into something
+                            meaningful. It's a small reminder that creativity
+                            often starts with very little.
                         </p>
 
                         <div
                             className="
-                mt-8
+                mt-6
                 h-px
                 w-0
                 bg-yellow-500
@@ -187,4 +190,4 @@ function Explore() {
     );
 }
 
-export default Explore;
+export default Create;

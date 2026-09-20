@@ -9,8 +9,6 @@ import {
 } from "../store/UIslice";
 import { Link } from "react-router";
 
-
-
 function Navbar() {
     const dispatch = useAppDispatch();
     const isMobileMenuOpen = useAppSelector(
@@ -35,25 +33,7 @@ function Navbar() {
                         </a>
                     ))}
                 </div>
-                <Link
-                    to="/life"
-                    className="
-    hidden
-    rounded-full
-    border
-    border-blue-600
-    px-4
-    py-2
-    text-sm
-    font-medium
-    text-blue-600
-    transition-all
-    duration-300
-    hover:-translate-y-0.5
-    hover:bg-blue-50
-    md:block
-  "
-                >
+                <Link to="/life">
                     🌙 LIFE
                 </Link>
                 <button
@@ -102,24 +82,7 @@ function Navbar() {
                             </a>
                         ))}
 
-                        <Link
-                            to="/life"
-                            onClick={() => dispatch(closeMobileMenu())}
-                            className="
-          w-fit
-          rounded-full
-          border
-          border-blue-600
-          px-4
-          py-2
-          text-sm
-          font-medium
-          text-blue-600
-          transition-all
-          duration-300
-          hover:bg-blue-50
-        "
-                        >
+                        <Link to="/life">
                             🌙 LIFE
                         </Link>
                     </div>
