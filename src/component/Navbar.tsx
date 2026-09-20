@@ -33,7 +33,19 @@ function Navbar() {
                         </a>
                     ))}
                 </div>
-                <Link to="/life">
+                <Link
+                    to="/life"
+                    className="
+        hidden
+        text-sm
+        font-medium
+        text-neutral-600
+        transition-opacity
+        duration-300
+        hover:opacity-50
+        md:block
+    "
+                >
                     🌙 LIFE
                 </Link>
                 <button
@@ -82,7 +94,17 @@ function Navbar() {
                             </a>
                         ))}
 
-                        <Link to="/life">
+                        <Link
+                            to="/life"
+                            onClick={() => dispatch(closeMobileMenu())}
+                            className="
+        text-sm
+        font-medium
+        text-neutral-700
+        transition-colors
+        hover:text-blue-600
+    "
+                        >
                             🌙 LIFE
                         </Link>
                     </div>
